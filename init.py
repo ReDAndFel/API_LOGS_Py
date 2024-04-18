@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import and_
 
 app = Flask(__name__)
+#mysql+mysqlconnector://usuario_database:password_database@host_database/name_database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:fel1004684293@localhost/api_logs'
 db = SQLAlchemy(app)
 
