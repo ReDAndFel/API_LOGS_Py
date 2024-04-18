@@ -1,0 +1,14 @@
+# Usa la imagen oficial de Python 3 como base
+FROM python:3
+
+# Establece el directorio de trabajo en /app
+WORKDIR /app
+
+# Copia los archivos necesarios al contenedor
+COPY . .
+
+# Instala las dependencias de la aplicación
+RUN pip install -r requirements.txt
+
+# Ejecuta la aplicación cuando se inicie el contenedor
+CMD ["python", "init.py"]
